@@ -200,9 +200,26 @@ body {
     width: 100%;
     display: flex;
     border-top: 3px solid #2F3133;
-
-
+    transform: translateY(110%);
+    transform: translateY(calc(100% + env(safe-area-inset-bottom))); /* iOS safe-area */
+    opacity: 0;
+    animation: barEnter .55s cubic-bezier(.22,.61,.36,1) forwards;
+    will-change: transform, opacity;
 }
+
+@keyframes barEnter{
+    from{
+      transform: translateY(110%);
+      transform: translateY(calc(100% + env(safe-area-inset-bottom)));
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+
 
 .bar div {
     
