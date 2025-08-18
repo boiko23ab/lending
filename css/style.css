@@ -4,6 +4,7 @@ body {
 
     font-family: "Work Sans" , sans-serif;
     color: #fff;
+    background: #2F3133;    
 
 }
 
@@ -279,6 +280,173 @@ body {
 
 
 
+  .form-sec {
+
+    width: 100%;
+
+  }
+
+  .form-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0px;
+    gap: 30px;
+    background: #2F3133;
+
+  }
+
+  .form-content>img {
+    width: 305px;
+  }
+
+  .content-in-form {
+
+    display: block;
+    gap: 30px;
+    padding-left: 20px;
+
+  }
+
+  .content-in-form>h2 {
+
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+
+  }
+
+  .form-list {
+    list-style: none;
+
+  }
+  
+  .form-list>li img {
+
+    width: 22px;
+  }
+
+  .form-list li {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 600;
+
+  }
 
 
+
+
+
+
+
+
+
+/* ===== MOBILE ONLY (≤768px) — форма правої колонки ===== */
+@media (max-width: 767.98px){
+
+  /* Контейнер форми */
+  .form-col{
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+  }
+
+  /* Сітка полів: одна колонка */
+  .quote-form .fields{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .full{ grid-column: 1 / -1; }
+
+  /* Лейбли */
+  .control label,
+  .radios legend{
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .06em;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+
+  /* Поля введення */
+  .control input,
+  .control select,
+  .control textarea{
+    width: 100%;
+    padding: 10px 12px;
+    background: #fff;
+    border: 2px solid #cfcfcf;
+    border-radius: 2px;
+    color: #111;
+    font: inherit;
+  }
+  .control input,
+  .control select{ height: 46px; }
+  .control textarea{ min-height: 110px; resize: vertical; }
+
+  /* Плейсхолдери */
+  .control input::placeholder,
+  .control textarea::placeholder{ color: #8a8a8a; }
+
+  /* Фокус (НЕ для radio) */
+  .control input:not([type="radio"]):focus,
+  .control select:focus,
+  .control textarea:focus{
+    outline: 2px solid #e63939; outline-offset: 0;
+    border-color: #e63939;
+  }
+
+  /* Блок з радіокнопками "Financing" */
+  .radios{
+    border: none; padding: 0; margin: 0;
+    display: flex; flex-wrap: wrap; align-items: center;
+    gap: 8px 14px;
+  }
+  .radio{
+    display: flex; align-items: center; gap: 14px;
+    font-size: 12.5px; color: #eaeaea; line-height: 1.2;
+  }
+  .radio input[type="radio"]{
+    width: 10px; height: 10px;
+    margin: 0;
+    accent-color: #c51616;
+    outline: none;             /* прибрати синє кільце браузера */
+    flex: 0 0 auto;
+  }
+  /* Акуратний фокус навколо підпису, а не всього блоку */
+  .radio:has(input[type="radio"]:focus-visible){
+    outline: 2px solid #e63939;
+    outline-offset: 2px;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+
+  /* Кнопка */
+  .btn-send{
+    width: 100%;
+    background: #c51616;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+  }
+  .btn-send:active{ transform: translateY(1px); }
+
+  /* Сервісні елементи */
+  .hp{ position: absolute; left: -9999px; opacity: 0; }  /* honeypot */
+  .form-success{ display: none; color: #9fe7a4; font-weight: 700; padding-top: 6px; }
+
+}
 

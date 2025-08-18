@@ -79,6 +79,81 @@
     
       </div>
     </section>
+
+    <section class="form-sec">
+        <div class="form-content">
+            <img src="img/Ready-to-Start-2.png.webp" alt="">
+            <div class="content-in-form">
+                    <h2>GET A FAST, FREE ESTIMATE!</h2>
+                <ul class="form-list">
+                    <li><img src="img/pin-icon.svg" alt="">Clear, Honest Pricing</li>
+                    <li><img src="img/pin-icon.svg" alt="">Flexible Financing Options</li>
+                    <li><img src="img/pin-icon.svg" alt="">Fast, Reliable Service</li>
+                    <li><img src="img/pin-icon.svg" alt="">100% Satisfaction Guarantee</li>
+                    <li><img src="img/pin-icon.svg" alt="">Top-Rated Team</li>
+                </ul>
+            </div>
+
+
+            <!-- === RIGHT COLUMN: QUOTE FORM === -->
+<div class="form-col">
+  <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+    <div class="fields">
+      <!-- row 1 -->
+      <div class="control">
+        <label for="name">NAME</label>
+        <input id="name" name="name" placeholder="Name" required>
+      </div>
+      <div class="control">
+        <label for="email">EMAIL</label>
+        <input id="email" name="email" type="email" placeholder="Email">
+      </div>
+
+      <!-- row 2 -->
+      <div class="control">
+        <label for="tel">TELEPHONE</label>
+        <input id="tel" name="telephone" inputmode="tel" placeholder="Telephone" required>
+      </div>
+      <div class="control">
+        <label for="service">SELECT</label>
+        <select id="service" name="service" required>
+          <option value="" selected disabled>— Select Service of Interest —</option>
+          <option>Fence Installation</option>
+          <option>Fence Repair</option>
+          <option>Fence Demolition</option>
+        </select>
+      </div>
+
+      <!-- row 3 -->
+      <div class="control full">
+        <label for="msg">MESSAGE</label>
+        <textarea id="msg" name="message" placeholder="Message"></textarea>
+      </div>
+
+      <!-- row 4: financing radios -->
+      <fieldset class="control full radios">
+        <legend>DO YOU NEED FINANCING FOR YOUR PROJECT?</legend>
+        <label class="radio"><input type="radio" name="financing" value="yes"> Yes, I'm interested</label>
+        <label class="radio"><input type="radio" name="financing" value="no"> No, I don't need it</label>
+      </fieldset>
+
+      <!-- spam honeypot -->
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off">
+
+      <!-- submit -->
+      <button class="btn-send full" type="submit">SEND</button>
+
+      <!-- success message -->
+      <div class="form-success" aria-live="polite">Thanks! We'll get back to you shortly.</div>
+    </div>
+
+  </form>
+</div>
+
+
+            
+        </div>
+    </section>
     
 </body>
 </html>
