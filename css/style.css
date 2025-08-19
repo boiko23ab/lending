@@ -54,10 +54,58 @@ body {
     z-index: 100;
 }
 
-.middle img {
+.discount-btn {
+
+  display: none;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.discount-btn a {
+
+  background: linear-gradient(135deg, #CA0000, #E62E2E);
+  color: #fff;
+  font-weight: 700;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+
+}
+
+.discount-btn a:hover {
+
+  background: linear-gradient(135deg, #B00000, #D92B2B);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(202, 0, 0, 0.4);
+
+}
+
+
+
+.logo img {
 
     width: 100px;
 }
+
+.number {
+
+  display: none;
+
+}
+
+
+
+
+
+
+
+
 
 .stack{
   position: relative;         
@@ -194,6 +242,7 @@ body {
 .bar-sec {
 
     width: 100%;
+    display: flex;
     position: sticky;
     bottom: 0;
     z-index: 1000;
@@ -287,6 +336,8 @@ body {
   .form-sec {
 
     width: 100%;
+    display: flex;
+    justify-content: center;
 
   }
 
@@ -300,7 +351,7 @@ body {
 
   }
 
-  .form-content>img {
+  .form-top>img {
     width: 305px;
   }
 
@@ -454,3 +505,107 @@ body {
 
 
 
+
+
+  @media (min-width: 1440px) {
+
+    .middle {
+
+      justify-content: space-between;
+    }
+
+    .number {
+
+      display: flex;
+      gap: 10px;
+      width: 33%;
+      align-items: center;
+      justify-content: end;
+      padding-right: 50px;
+
+
+
+    }
+    
+    .number span {
+
+      font-size: 25px;
+      line-height: 1;
+      font-weight: 700;
+
+
+    }
+
+    .number img {
+
+      width: 90px;
+      margin-top: -20px;
+      
+    }
+
+    .discount-btn {
+
+      display: flex;
+
+    }
+
+    .bar {
+
+      width: 500px;
+      border-left: 3px solid #000000;
+      border-right: 3px solid #000000;
+    }
+
+    .bar-sec {
+
+      justify-content: flex-end;
+      padding-right: 20px;
+
+    }
+
+    .form-content {
+
+      width: 65%;
+      border: 10px solid #D2D4D5;
+      flex-direction: row;
+      
+    }
+    
+    .form-top>img {
+
+      width: 500px;
+      margin-bottom: 130px;
+
+    }
+    
+    .top {
+
+      flex-direction: row;
+    }
+
+    .wrapper p {
+
+      font-size: 100px;
+
+    }
+
+    .words {
+
+      height: 100px;
+    }
+
+    .words span {
+
+      font-size: 100px;
+
+    }
+
+    .btn-hero {
+
+      margin-top: 370px;
+    }
+
+
+
+ 
+  }
